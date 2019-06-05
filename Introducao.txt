@@ -1,1 +1,11 @@
 Introdução ao Banco de dados
+create database teste;
+use teste;
+create table tb_login(
+id int auto_increment primary key, 
+nome varchar (50),
+login varchar (20),
+senha nvarchar (200));
+insert into tb_login(nome,login,senha)
+values('Yago Aparecido','Yago',md5('123@senac'));
+select * from tb_login;
